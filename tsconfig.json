@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "outDir": "dist/src",
+        "rootDir": "src",
+        "sourceMap": false,
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
+

@@ -1,0 +1,44 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "main": "dist/src/app.js",
+  "scripts": {
+    "dev": "nodemon",
+    "model:generate": "ts-node ./node_modules/.bin/sequelize model:generate --name",
+    "migration:create": "ts-node ./node_modules/.bin/sequelize migration:create --name",
+    "migration:generate": "ts-node ./node_modules/.bin/sequelize migration:generate --name",
+    "seed:create": "ts-node ./node_modules/.bin/sequelize seed:create --name",
+    "seed:generate": "ts-node ./node_modules/.bin/sequelize seed:generate --name",
+    "db:create": "ts-node ./node_modules/.bin/sequelize db:create",
+    "db:migrate": "ts-node ./node_modules/.bin/sequelize db:migrate",
+    "db:migrate:undo": "ts-node ./node_modules/.bin/sequelize db:migrate:undo",
+    "db:migrate:undo:all": "ts-node ./node_modules/.bin/sequelize db:migrate:undo:all",
+    "db:seed": "ts-node ./node_modules/.bin/sequelize db:seed:all --to",
+    "db:seed:undo": "ts-node ./node_modules/.bin/sequelize db:seed:all:undo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.7",
+    "@types/sequelize": "^4.28.20",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-errors": "^2.0.0",
+    "inversify": "^6.1.1",
+    "mysql2": "^3.11.3",
+    "reflect-metadata": "^0.2.2",
+    "sequelize-cli": "^6.6.2",
+    "sequelize-typescript": "^2.1.6",
+    "sqlite3": "^5.1.7",
+    "uuid": "^11.0.2",
+    "zod": "^3.23.8"
+  }
+}

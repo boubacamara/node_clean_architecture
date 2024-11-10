@@ -1,0 +1,14 @@
+PORT = 5000
+
+ENV_MODE = development
+DIALECT_MODE = sqlite
+
+#DATABASE
+DB_USERNAME = root
+DB_PASSWORD = password
+DB_DATABASE = database_name
+
+#SQLITE
+SQL_STORAGE = src/database/data.sqlite
+SQL_DIALECT = sqlite
+SQL_LOGGING = false
